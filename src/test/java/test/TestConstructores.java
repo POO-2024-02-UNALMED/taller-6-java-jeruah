@@ -37,7 +37,7 @@ public class TestConstructores {
 				&& ve.getVelocidadMaxima() ==  100) {
 			ok = true;
 		}
-		assertTrue(ok, "Hay un error en los constructores de la clase Automovil");
+		assertTrue(ok, "Hay un error en los constructores de la clase vehiculos.Automovil");
     }
 	
 	@Test
@@ -50,20 +50,20 @@ public class TestConstructores {
 				&& ve.getVelocidadMaxima() ==  90) {
 			ok = true;
 		}
-		assertTrue(ok, "Hay un error en los constructores de la clase Camioneta");
+		assertTrue(ok, "Hay un error en los constructores de la clase vehiculos.Camioneta");
     }
 	
 	@Test
    	public void testCamion(){
 		
-		Vehiculo ve = new Camion("SS", "Camion premium", 1000, 100, f, 3);
+		Vehiculo ve = new Camion("SS", "vehiculos.Camion premium", 1000, 100, f, 3);
 		
 		boolean ok = false;
 		if(ve.getPuertas() == 2 && ve.getTraccion().equals("4X2")
 				&& ve.getVelocidadMaxima() ==  80) {
 			ok = true;
 		}
-		assertTrue(ok, "Hay un error en los constructores de la clase Camion");
+		assertTrue(ok, "Hay un error en los constructores de la clase vehiculos.Camion");
     }
 	
 	@Test
@@ -77,7 +77,7 @@ public class TestConstructores {
 				&& ve.getTraccion().equals("AWD")) {
 			ok = true;
 		}
-		assertTrue(ok, "Hay un error en los constructores de la clase Vehiculo");
+		assertTrue(ok, "Hay un error en los constructores de la clase vehiculos.Vehiculo");
     }
 	
 	@Test
@@ -90,7 +90,7 @@ public class TestConstructores {
 				&& f.getPais() == p) {
 			ok = true;
 		}
-		assertTrue(ok, "Hay un error en los constructores de la clase Fabricante");
+		assertTrue(ok, "Hay un error en los constructores de la clase vehiculos.Fabricante");
     }
 	
 	@Test
@@ -102,7 +102,7 @@ public class TestConstructores {
 		if(p.getNombre().equals("Colombia")) {
 			ok = true;
 		}
-		assertTrue(ok, "Hay un error en los constructores de la clase Pais");
+		assertTrue(ok, "Hay un error en los constructores de la clase vehiculos.Pais");
     }
 
 }
